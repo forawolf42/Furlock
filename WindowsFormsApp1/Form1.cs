@@ -30,7 +30,6 @@ namespace WindowsFormsApp1
 
             foreach (Form frm in fc)
             {
-                //iterate through
                 if (frm.Name == "Lock")
                 {
                     frm.WindowState = FormWindowState.Minimized;
@@ -40,9 +39,7 @@ namespace WindowsFormsApp1
                     frm.WindowState = FormWindowState.Normal;
                 }
             }
-
         }
-
         private void dispatcherTimer_Tick(object sender, EventArgs e)
         {
             if (kapali)
@@ -77,7 +74,6 @@ namespace WindowsFormsApp1
 
                     foreach (Form frm in fc)
                     {
-                        //iterate through
                         if (frm.Name == "Lock")
                         {
                             var = true;
@@ -102,7 +98,6 @@ namespace WindowsFormsApp1
 
                     foreach (Form frm in fc)
                     {
-                        //iterate through
                         if (frm.Name == "Lock")
                         {
                             frm.WindowState = FormWindowState.Maximized;
@@ -128,7 +123,6 @@ namespace WindowsFormsApp1
 
         }
 
-
         private void button2_Click(object sender, EventArgs e)
         {
             faceRec.Save_IMAGE("ADMIN");
@@ -139,11 +133,6 @@ namespace WindowsFormsApp1
             faceRec.isTrained = true;
             faceRec.getPersonName(label1);
             Console.WriteLine("deneme");
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private bool kapali = true;
@@ -184,23 +173,6 @@ namespace WindowsFormsApp1
             }
 
         }
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
+  
     }
 }
